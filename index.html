@@ -41,6 +41,7 @@
 				<section>
 					<h1>AWS API Gateway</h1>
 					<p>Rahul Revo</p>
+                    <p><small>Jan 2015</small></p>
 				</section>
 			</div>
             
@@ -85,26 +86,135 @@
             
             <div class="slides">
 				<section>
-					<h1>Features</h1>
-                    <ul>
-                        <li>Monitoring and analytics</li>
-                        <li>Software development kit (SDK)</li>
-                        <li>Version management</li>
-                        <li>Handle authorization and access control</li>
-                        <li>Traffic management</li>
-                    </ul>
- 				</section>
-			</div>
-            
-            <div class="slides">
-				<section>
 					<h1>REST API</h1>
+                    <p>
+                        <img src="assets/resources.png" />
+                    </p>
                     <ul>
                         <li>Resources</li>
                         <li>Methods - GET, POST, PUT, DELETE</li>
                         <li>Representation - json, xml</li>
                     </ul>
 				</section>
+			</div>
+            
+            <div class="slides">
+				<section>
+					<h1>API Execution Flow</h1>
+                    <p>
+                        <img src="assets/api-execution.png" />
+                    </p>
+                    <ul>
+                        <li>Pre Input actions</li>
+                        <li>Backend</li>
+                        <li>Post Output actions</li>
+                    </ul>
+				</section>
+			</div>
+            
+            <div class="slides">
+				<section>
+					<h1>Pre Input actions</h1>
+                    <ul>
+                        <li>Authorization Settings - IAM</li>
+                        <li>Request parts - method.request.$part.$parameter-name
+                            <ul>
+                                <li>Paths</li>
+                                <li>Query String</li>
+                                <li>Header</li>
+                            </ul>
+                        </li>
+                        <li>Models - json schema</li>
+                        <li>Backend configuration
+                            <ul>
+                                <li>Private AWS API</li>
+                                <li>Lambda</li>
+                                <li>Public API</li>
+                                <li>AWS Proxy</li>
+                            </ul>
+                        </li>
+                        <li>Transformations - Velocity</li>
+                    </ul>
+				</section>
+			</div>
+            
+            <div class="slides">
+				<section>
+					<h1>Post Output actions</h1>
+                    <ul>
+                        <li>Request parts - method.request.$part.$parameter-name
+                            <ul>
+                                <li>Paths</li>
+                                <li>Query String</li>
+                                <li>Header</li>
+                                <li>Status Codes</li>
+                            </ul>
+                        </li>
+
+                        <li>Models</li>
+                        <li>Transformations</li>
+                    </ul>
+				</section>
+			</div>
+            
+            <div class="slides">
+				<section>
+					<h1>End to End</h1>
+                    <ul>
+                        <li>Build</li>
+                        <li>Stage - Versioning</li>
+                        <li>Deploy - Publish</li>
+                    </ul>
+				</section>
+			</div>
+            
+            <div class="slides">
+				<section>
+                    <h1>URL</h1>
+                    <p>https://$my-api-id.execute-api.$region-id.amazonaws.com/$stage-name/{resourcePath}</p>
+				</section>
+            </div>
+                        
+            <div class="slides">
+				<section>
+					<h1>Features - Networking</h1>
+                    <p>
+                        <img src="assets/feature-cache.png" />
+                    </p>
+                    <ul>
+                        <li>Caching</li>
+                        <li>Monitoring and analytics - Cloudwatch logs</li>
+                        <li>API Throttling</li>
+                    </ul>
+ 				</section>
+			</div>
+            
+            <div class="slides">
+				<section>
+					<h1>Features - SDK</h1>
+                    <p>
+                        <img src="assets/feature-sdk.png" />
+                    </p>
+                    <p>
+                        SDK generation from Model with Throttling
+                       <ul>
+                            <li>Android</li>
+                            <li>iOS</li>
+                            <li>Javascript</li>
+                        </ul>
+                    </p>
+ 				</section>
+			</div>
+            
+            <div class="slides">
+				<section>
+					<h1>More Features</h1>
+                    <ul>
+                        <li>Custom Domain Names</li>
+                        <li>Swagger specification</li>
+                        <li>CORS</li>
+                    </ul>
+ 				</section>
 			</div>
             
             <div class="slides">
